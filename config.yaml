@@ -1,0 +1,11 @@
+servers:
+  - name: "Servidor_Web_Produccion"
+    type: "linux_ssh"    # <- El Factory lee esto
+    ip: "127.0.0.1" 
+    user: "usuario_prueba"
+    port: 22
+
+thresholds:
+  cpu_percent: 85
+  ram_percent: 90
+  disk_percent: 80
